@@ -19,6 +19,8 @@ pragma solidity 0.8.19;
 contract DeleteFromArray {
 
     uint256[] public nums;
+    // sencond array to hold values to delete
+    bool[8] public toDelete;
 
     // initiates array with 8 integers
     constructor() {
@@ -29,10 +31,11 @@ contract DeleteFromArray {
     function deleteItems(uint256 index1, uint256 index2, uint256 index3) public returns (uint256[] memory) {
             require(index1 < nums.length && index2 < nums.length && index3 < nums.length, "Index out of bounds");
 
-            // delete indexes by settign values to their default, in this case 0
-            nums[index1] = 0;
-            nums[index2] = 0;
-            nums[index3] = 0;
+            // delete indexes by settign values to true
+            toDelete[index1] = true;
+            toDelete[index2] = true;
+            toDelete[index3] = true;
+
 
             // create a new empty array minus the spots that where deleted
             uint256[] memory newNums = new uint256[](nums.length - 3);
@@ -40,19 +43,19 @@ contract DeleteFromArray {
             // using a for loop copy the values of the nums array, minus those equal to 0, into the newNums array
             uint256 j = 0;
             for (uint256 i = 0; i < nums.length; i++) {
-                if (nums[i] != 0) {
-                    newNums[j++] = nums[i];
+                 if (!toDelete[i]) {
+                newNums[j++] = nums[i];
                 }
             }
+
+            // reset delete array
+            delete toDelete;
 
             // copy the newly created newNums array back into the dynamic nums array
             nums = newNums;
 
             // return the original array minus the indexes that were deleted
             return nums;
-
-
-
 
     }
 
