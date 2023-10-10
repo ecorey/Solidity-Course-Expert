@@ -12,6 +12,11 @@ The final array will then have items {0,1,3,4,5,6,9,10,11}
 
 ---
 
+/**
+@notice Think of ways to gas optimize by using opcodes in an assembly block and
+minimize the amount of storage being used for variables.
+**/
+
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.19;
