@@ -31,4 +31,5 @@ The 2 pieces of information that can prevent a replay attack are the Chain ID an
 QUESTION 4
 . In a contract, how do we know who called a view
 function ?
+
 It can be possible to know the caller of a view function via the msg.sender, but in the case of an off-chain call this can be spoofed.
