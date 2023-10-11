@@ -28,4 +28,30 @@ QUESTION 3
 variable, then using the debugger step through the
 function and inspect the memory
 
+    //SPDX-License-Identifier: MIT
+
+    pragma solidity 0.8.19;
+
+    contract memoryVariable {
+
+        // function uses a uint256 variable in memory and returns it.
+        // there are no state variables being held in the contract's storage
+        function useMemoryNumberVar(uint256 memVar) public pure returns (uint256) {
+            uint256 memoryNumberVariable = memVar;
+            return memoryNumberVariable;
+        }
+
+    }
+
+DEBUGGER:
+
+input for the function was: 11
+
+Memory:
+{
+"0x0": "0000000000000000000000000000000000000000000000000000000000000000\t????????????????????????????????",
+"0x20": "0000000000000000000000000000000000000000000000000000000000000000\t????????????????????????????????",
+"0x40": "0000000000000000000000000000000000000000000000000000000000000080\t????????????????????????????????"
+}
+
 ---
