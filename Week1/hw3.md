@@ -45,7 +45,7 @@ function and inspect the memory
 
 DEBUGGER:
 
-input for the function was: 11
+Input for the function was: 11
 
     Memory:
         {
