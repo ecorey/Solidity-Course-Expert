@@ -65,4 +65,4 @@ The final array will then have items {0,1,3,4,5,6,9,10,11}
 
         }
 
-}
+    }
