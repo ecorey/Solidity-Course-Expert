@@ -5,6 +5,10 @@ QUESTION 1
 . What are the advantages and disadvantages of the 256
 bit word length in the EVM
 
+There are both advantages and disadvantages to having a 256 bit word length in the EVM. The main advantages are security/ cryptographic strength, consistency with the Keccak-256 cryptographic algorithm used by Ethereum, and the ability to use very large numbers.
+
+Some of the disadvantages are the inefficiency that this creates in using smaller values, and it creates more complexity in developing and understanding code which in turn creates a higher probability for potential errors and bugs.
+
 ---
 
 QUESTION 2
