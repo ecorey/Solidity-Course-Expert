@@ -64,6 +64,60 @@ There are a total of 60 slots being used.
 By re ordering the variables, can you reduce the number of
 storage slots needed ?
 
+By grouping like variables and listing them from smalles storage requirement to largest, it is possible to save storage slots as seen with this revision to the contract:
+
+    // SPDX-License-Identifier: UNLICENSED
+    pragma solidity ^0.8.13;
+
+    contract Store {
+
+
+
+        bool flag1;
+        bool flag2;
+        bool flag3;
+        uint8 index;
+        uint256 public number;
+        address admin;
+        address admin2;
+        mapping (address=>uint256) balances;
+        payments[8] topPayments;
+
+
+        struct payments {
+            bool valid;
+            bool checked;
+            uint8 paymentType;
+            uint256 amount;
+            uint256 finalAmount;
+            uint256 initialAmount;
+            address sender;
+            address receiver;
+        }
+
+
+        constructor(){
+
+        }
+
+
+        function setNumber(uint256 newNumber) public {
+            number = newNumber;
+        }
+
+        function increment() public {
+            number++;
+        }
+    }
+
+sol2uml storage output for the revides contract with grouped variables:
+
+![Storage Image](./storage4.JPG)
+![Storage Image](./storage5.JPG)
+![Storage Image](./storage6.JPG)
+
+There are now a total of 52 slots being used.
+
 ---
 
 QUESTION 2
