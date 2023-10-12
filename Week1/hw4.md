@@ -49,9 +49,6 @@ using.
 
     https://github.com/naddison36/sol2uml
 
-By re ordering the variables, can you reduce the number of
-storage slots needed ?
-
 sol2uml output for the contract:
 
 ![UML Image](./uml.JPG)
@@ -61,6 +58,11 @@ sol2uml storage output for the contract:
 ![Storage Image](./storage1.JPG)
 ![Storage Image](./storage2.JPG)
 ![Storage Image](./storage3.JPG)
+
+There are a total of 60 slots being used.
+
+By re ordering the variables, can you reduce the number of
+storage slots needed ?
 
 ---
 
