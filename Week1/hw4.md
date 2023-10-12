@@ -54,7 +54,7 @@ storage slots needed ?
 
 sol2uml output for the contract:
 
-![UML Image](./Week1/uml.jpg)
+![UML Image](./Week1/uml.JPG)
 
 ---
 
@@ -110,4 +110,4 @@ QUESTION 3
 Is this valid solidity ?
 --> image.png
 
-![Image](./Week1/image.png)
+![Valid Code Or Not](.\Week1\image.png)
