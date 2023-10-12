@@ -170,6 +170,11 @@ property such as latest block number.
 
 QUESTION 3
 Is this valid solidity ?
---> image.png
 
 ![Valid Code Or Not](./image.JPG)
+
+Syntactically the above function is correct, and the function takes as an input a chain of 9 functions. In this example the innermost function in the chain is the function:
+
+    function () external pure {}
+
+This function itself dose not take an input but the function a takes the chain of functions as an input.
