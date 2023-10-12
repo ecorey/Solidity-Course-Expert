@@ -1,6 +1,7 @@
 Homework 4
 Optimising Storage
 
+QUESTION 1
 Take this contract
 
     // SPDX-License-Identifier: UNLICENSED
@@ -48,12 +49,12 @@ using.
 
     https://github.com/naddison36/sol2uml
 
-QUESTION 1
 By re ordering the variables, can you reduce the number of
 storage slots needed ?
 
 ---
 
+QUESTION 2
 Foundry Introduction
 . Install Foundry
 
@@ -101,6 +102,6 @@ property such as latest block number.
 
 ---
 
-QUESTION 2
+QUESTION 3
 Is this valid solidity ?
 --> image.png
