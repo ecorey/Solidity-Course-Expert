@@ -110,4 +110,4 @@ QUESTION 3
 Is this valid solidity ?
 --> image.png
 
-![Valid Code Or Not](./image.png)
+![Valid Code Or Not](./image.jpg)
