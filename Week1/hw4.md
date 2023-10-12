@@ -56,6 +56,12 @@ sol2uml output for the contract:
 
 ![UML Image](./uml.JPG)
 
+sol2uml storage output for the contract:
+
+![Storage Image](./storage1.JPG)
+![Storage Image](./storage2.JPG)
+![Storage Image](./storage3.JPG)
+
 ---
 
 QUESTION 2
