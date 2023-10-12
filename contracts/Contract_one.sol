@@ -1,3 +1,5 @@
+// Contract used for Week1 hw4.md Question 1
+
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
