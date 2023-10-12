@@ -52,6 +52,10 @@ using.
 By re ordering the variables, can you reduce the number of
 storage slots needed ?
 
+sol2uml output for the contract:
+
+![UML Image](./Week1/uml.jpg)
+
 ---
 
 QUESTION 2
@@ -105,3 +109,5 @@ property such as latest block number.
 QUESTION 3
 Is this valid solidity ?
 --> image.png
+
+![Image](./Week1/image.png)
