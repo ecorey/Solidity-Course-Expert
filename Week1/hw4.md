@@ -158,9 +158,9 @@ template or
 Foundry
 Try out the Solidity Template or the Foundry Template
 
-    Foundry Project Example:
+Foundry Project Example:
 
-    https://github.com/ecorey/Week1_HW4_Foundry
+https://github.com/ecorey/Week1_HW4_Foundry
 
 Test Example:
 
@@ -168,9 +168,9 @@ Test Example:
 
 . Start a new project using the Solidity Template
 
-    Foundry Project Example from Template:
+Foundry Project Example from Template:
 
-    https://github.com/ecorey/Week1_HW4_Foundry_fromTemplate
+https://github.com/ecorey/Week1_HW4_Foundry_fromTemplate
 
 . Make a fork of mainnet from the command line (you may
 need to setup an Infura or Alchemy account)
