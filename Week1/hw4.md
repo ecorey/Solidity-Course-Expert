@@ -166,11 +166,11 @@ need to setup an Infura or Alchemy account)
 . Query the mainnet using the command line to retrieve a
 property such as latest block number.
 
-1. For the answer please see Week1_HW4_Foundry Repository at:
+1. For the answer to familiarise please see Week1_HW4_Foundry Repository at:
 
    https://github.com/ecorey/Week1_HW4_Foundry
 
-2. For the answer to the FORk project please see Week1_HW4_Foundry_fromTemplate Repository at:
+2. For the answer to the FORK project please see Week1_HW4_Foundry_fromTemplate Repository at:
 
    https://github.com/ecorey/Week1_HW4_Foundry_fromTemplate
 
