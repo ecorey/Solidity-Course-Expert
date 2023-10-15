@@ -158,23 +158,21 @@ template or
 Foundry
 Try out the Solidity Template or the Foundry Template
 
+    https://github.com/ecorey/Week1_HW4_Foundry
+
 . Start a new project using the Solidity Template
+
+    https://github.com/ecorey/Week1_HW4_Foundry_fromTemplate
 
 . Make a fork of mainnet from the command line (you may
 need to setup an Infura or Alchemy account)
 
+![Forge Test](./test.JPG)
+
 . Query the mainnet using the command line to retrieve a
 property such as latest block number.
 
-1. For the answer to familiarise please see Week1_HW4_Foundry Repository at:
-
-   https://github.com/ecorey/Week1_HW4_Foundry
-
-2. For the answer to the FORK project please see Week1_HW4_Foundry_fromTemplate Repository at:
-
-   https://github.com/ecorey/Week1_HW4_Foundry_fromTemplate
-
-   ![Forge Test](./test.JPG)
+![CLI Bocknumber](./blocknumber.JPG)
 
 ---
 
