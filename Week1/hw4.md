@@ -174,6 +174,8 @@ property such as latest block number.
 
    https://github.com/ecorey/Week1_HW4_Foundry_fromTemplate
 
+   ![Forge Test](./test.JPG)
+
 ---
 
 QUESTION 3
