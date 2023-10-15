@@ -164,7 +164,7 @@ https://github.com/ecorey/Week1_HW4_Foundry
 
 Test Example:
 
-![Forge Test](./test.JPG)
+![Forge Test](./test.png)
 
 . Start a new project using the Solidity Template
 
@@ -175,12 +175,12 @@ https://github.com/ecorey/Week1_HW4_Foundry_fromTemplate
 . Make a fork of mainnet from the command line (you may
 need to setup an Infura or Alchemy account)
 
-![Forge Test2](./test2.JPG)
+![Forge Test2](./test2.png)
 
 . Query the mainnet using the command line to retrieve a
 property such as latest block number.
 
-![CLI Bocknumber](./blocknumber.JPG)
+![CLI Bocknumber](./blocknumber.png)
 
 ---
 
