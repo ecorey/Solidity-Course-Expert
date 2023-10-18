@@ -76,11 +76,15 @@ In order to optimize the code the removal of redundancies and in reusing memory 
 QUESTION 3
 . Can you trigger a revert in the init code in Remix ?
 
+The init code is used to inialize the code and is executed when the contract is deployed and the constructor is called. Because the constructor is only called once the init code is also only used once. To create a condition to trigger a revert in the init code you would need to create a condition where the constructor fails or a require statment is not met.
+
 QUESTION 4
 . Write some Yul to
 . Add 0x07 to 0x08
 . store the result at the next free memory location.
 . (optional) write this again in opcodes
+
+YUL:
 
 QUESTION 5
 . Can you think of a situation where the opcode
