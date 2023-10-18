@@ -58,111 +58,20 @@ overwriting ?
 
 In the debugger it is possible to see the list of opcodes as:
 
-    005 CALLVALUE -
-    006 DUP1 -
-    007 ISZERO -
-    008 PUSH2 0010 -
-    011 JUMPI -
-    012 PUSH1 00 -
-    014 DUP1 -
-    015 REVERT -
-    016 JUMPDEST -
-    017 POP -
-    018 PUSH1 11 - LINE 9
-    020 PUSH1 00 - LINE 9
-    022 DUP2 - LINE 9
-    023 SWAP1 - LINE 9
-    024 SSTORE - LINE 9
-    025 POP - LINE 9
     026 PUSH1 b6 - LINE 9
     028 DUP1 - LINE 9
     029 PUSH2 0027 - LINE 9
     032 PUSH1 00 - LINE 9
     034 CODECOPY - LINE 9
-    035 PUSH1 00 - LINE 9
-    037 RETURN - LINE 9
-    038 INVALID -
-    039 PUSH1 80 -
-    041 PUSH1 40 -
-    043 MSTORE -
-    044 CALLVALUE -
-    045 DUP1 -
-    046 ISZERO -
-    047 PUSH1 0f -
-    049 JUMPI -
-    050 PUSH1 00 -
-    052 DUP1 -
-    053 REVERT -
-    054 JUMPDEST -
-    055 POP -
-    056 PUSH1 04 -
-    058 CALLDATASIZE -
-    059 LT -
-    060 PUSH1 28 -
-    062 JUMPI -
-    063 PUSH1 00 -
-    065 CALLDATALOAD -
-    066 PUSH1 e0 -
-    068 SHR -
-    069 DUP1 -
-    070 PUSH4 57de26a4 -
-    075 EQ -
-    076 PUSH1 2d -
-    078 JUMPI -
-    079 JUMPDEST -
-    080 PUSH1 00 -
-    082 DUP1 -
-    083 REVERT -
-    084 JUMPDEST -
-    085 PUSH1 33 -
-    087 PUSH1 47 -
-    089 JUMP -
-    090 JUMPDEST -
-    091 PUSH1 40 -
-    093 MLOAD -
-    094 PUSH1 3e -
-    096 SWAP2 -
-    097 SWAP1 -
-    098 PUSH1 67 -
-    100 JUMP -
-    101 JUMPDEST -
-    102 PUSH1 40 -
-    104 MLOAD -
-    105 DUP1 -
-    106 SWAP2 -
-    107 SUB -
-    108 SWAP1 -
-    109 RETURN -
-    110 JUMPDEST -
-    111 PUSH1 00 -
-    113 DUP1 -
-    114 SLOAD -
-    115 SWAP1 -
-    116 POP -
-    117 SWAP1 -
-    118 JUMP -
-    119 JUMPDEST -
-    120 PUSH1 00 -
-    122 DUP2 -
-    123 SWAP1 -
-    124 POP -
-    125 SWAP2 -
-    126 SWAP1 -
-    127 POP -
-    128 JUMP -
-    129 JUMPDEST -
-    130 PUSH1 61 -
-    132 DUP2 -
-    133 PUSH1 50 -
-    135 JUMP -
-    136 JUMPDEST -
-    137 DUP3 -
-    138 MSTORE -
 
-Here we are able to see that the COPYCODE opcode is used to ...
+Here we are able to see that the COPYCODE opcode is used to copy data from the code to memory. The COPYCODE opcode uses 3 arguments from the stack as memOffset, codeOffset, and length. This represents the strating position in memory where the data will be copied to, the starting position in the code itself where the data will be copied from, and the number of bytes to copy.
+
+In this case theCOPYCODE is overwriting a segment of memory starting at position 0x00 and spanning 0x27 (39 in decimal) bytes.
 
 QUESTION 2
 . Could the answer to Q1 allow an optimisation ?
+
+In order to optimize the code the removal of redundancies and in reusing memory slots. The COPYCODE allows a memory storage area to be reused and thus allows an optimization.
 
 QUESTION 3
 . Can you trigger a revert in the init code in Remix ?
