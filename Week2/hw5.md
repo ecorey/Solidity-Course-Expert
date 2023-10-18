@@ -86,9 +86,26 @@ QUESTION 4
 
 YUL:
 
+    {
+        // load the free memory pointer
+        let freeMemPointer := mload(0x40)
+
+        // perform addition: 0x07 + 0x08 = 0x0F
+        let sum := add(0x07, 0x08)
+
+        // store the result at the next free memory location
+        mstore(freeMemPointer, sum)
+
+        // update the free memory pointer to the next 32-byte aligned location
+        mstore(0x40, add(freeMemPointer, 0x20))
+    }
+
 QUESTION 5
 . Can you think of a situation where the opcode
 EXTCODECOPY is used ?
+
+The EXTCODECOPY is used to copy code from another contract into the memory of the current contract. This could be the case where a contract but not when a contract calls a function of another contract which would be done through CALL, DELEGATECALL, STATICCALL, or CALLCODE.
+A contract may use EXTCODECOPY in the case of some proxy contract situations where a proxy retrieved and executed the code of another contract but remained the same.
 
 QUESTION 6
 . Complete the assembly exercises in this repo
