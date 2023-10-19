@@ -7,6 +7,23 @@ The solidity function should return the amount of ETH
 that was passed to it, and the function body should be
 written in assembly
 
+    // SPDX-License-Identifier: MIT
+
+    pragma solidity 0.8.18;
+
+    contract ReturnValue{
+
+
+        function returnEth() public payable returns (uint256 value) {
+            // callvalue() is the assembly function to access msg.value
+            assembly {
+                value := callvalue()
+            }
+        }
+
+
+    }
+
 QUESTION 2
 . Do you know what this code is doing ?
 
