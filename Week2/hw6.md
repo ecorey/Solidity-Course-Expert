@@ -29,8 +29,12 @@ written in assembly
 QUESTION 2
 . Do you know what this code is doing ?
 
+    :: The mstore opcode uses the offset of the msize and saves the push9 to memory
+    // Place 9 byte item on stack #68
     push9 0x601e8060093d393df3
+    // Get the size of active memory in bytes #59
     msize
+    // Save word to memory, takes 2 stack input (offset, value) #52
     mstore                                   # mem = 000...000
     601e8060093d393df3
 
@@ -41,27 +45,44 @@ QUESTION 2
     # copy the runtime bytecode after the constructor code
 
     in mem
+    // Size of code running in current environment, input(destOffset, offset, size)#38
     codesize                                 # cs
+    // Size of output data from the previous call from current environment output(size) # 3D
     returndatasize                           # 0 cs
+    // Get the size of active memory in bytes #59
     msize                                    # 0x20 0 cs
+    // Code running in current environment to memory, input(destOffset, offset, size) #39
     codecopy                                 # mem = 000...000
     601e8060093d393df3 RUNTIME_BYTECODE
 
     # --- stack ---
 
+    // Place 1 byte item on stack #60
     push1 9                                  # 9
+    // Size of code running in current environment, input(destOffset, offset, size)#38
     codesize                                 # cs 9
+    // Addition operation, input(a, b) output(a+b) #1
     add                                      # cs+9 = CS = total codesize
+
     in memory
 
+    // Place 1 byte item on stack #60
     push1 23                                 # 23 CS
+    // Size of output data from the previous call from current environment output(size) # 3D
     returndatasize                           # 0 23 CS
+    // Duplicate 3rd stack item, input(a, b, c) output(c,a,b,c) #82
     dup3                                     # CS 0 23 CS
+    // Duplicate 3rd stack item, input(a, b, c) output(c,a,b,c) #82
     dup3                                     # 23 CS 0 23 CS
+    // Deposited value by instruction/transaction responsible for exec., output(value) #34
     callvalue                                # v 23 CS 0 23 CS
+    // Create account with associated code, input(value, offset, size) output(address) #F0
     create                                   # addr1 0 23 CS
+    // Remove item from stack input(y) #50
     pop                                      # 0 23 CS
+    // Create account with associated code, input(value, offset, size) output(address) #F0
     create                                   # addr2
+    // 	Halt execution and register account for later deletion, 1 stack input(address) #FF
     selfdestruct
 
 See gist
