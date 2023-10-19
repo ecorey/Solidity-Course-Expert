@@ -82,7 +82,7 @@ QUESTION 2
     pop                                      # 0 23 CS
     // Create account with associated code, input(value, offset, size) output(address) #F0
     create                                   # addr2
-    // 	Halt execution and register account for later deletion, 1 stack input(address) #FF
+    // Halt execution and register account for later deletion, 1 stack input(address) #FF
     selfdestruct
 
 See gist
