@@ -36,4 +36,4 @@ EG:
 
 For the answer see the HW8_Foundry Repository found at:
 
-    https://github.com/ecorey/HW8_Foundry
+[HW8](https://github.com/ecorey/HW8_Foundry)
