@@ -1,5 +1,7 @@
 Homework 8
 Gas optimisation team game
+
+QUESTION 1
 Clone this repo
 
     https://github.com/ExtropyIO/GasOptimisationFoundry
@@ -29,3 +31,9 @@ RUN:
 EG:
 
     forge test --match-test test_onlyOwner -vvvv
+
+---
+
+For the answer see the HW8_Foundry Repository found at:
+
+    https://github.com/ecorey/HW8_Foundry
