@@ -160,14 +160,16 @@ Assembly_2.sol
             // Intermediate variables can't communicate between  assembly blocks
             // But they can be written to memory in one block
             // and retrieved in another.
+
             // Fix this code using memory to store the result between the blocks
             // and return the result from the second block
-            assembly {
+           assembly {
                 let result := add(x, y)
+                mstore(0x80, result)
             }
 
             assembly {
-                return()
+                return(0x80, 0x20)
             }
         }
     }
