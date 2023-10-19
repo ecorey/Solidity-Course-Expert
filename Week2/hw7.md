@@ -13,6 +13,8 @@ returns false
     ...
     }
 
+---
+
 QUESTION 2
 The following function checks function details passed in the
 data parameter.

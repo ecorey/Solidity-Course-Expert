@@ -68,15 +68,21 @@ Here we are able to see that the COPYCODE opcode is used to copy data from the c
 
 In this case theCOPYCODE is overwriting a segment of memory starting at position 0x00 and spanning 0x27 (39 in decimal) bytes.
 
+---
+
 QUESTION 2
 . Could the answer to Q1 allow an optimisation ?
 
 In order to optimize the code the removal of redundancies and in reusing memory slots. The COPYCODE allows a memory storage area to be reused and thus allows an optimization.
 
+---
+
 QUESTION 3
 . Can you trigger a revert in the init code in Remix ?
 
 The init code is used to inialize the code and is executed when the contract is deployed and the constructor is called. Because the constructor is only called once the init code is also only used once. To create a condition to trigger a revert in the init code you would need to create a condition where the constructor fails or a require statment is not met.
+
+---
 
 QUESTION 4
 . Write some Yul to
@@ -100,12 +106,16 @@ YUL:
         mstore(0x40, add(freeMemPointer, 0x20))
     }
 
+---
+
 QUESTION 5
 . Can you think of a situation where the opcode
 EXTCODECOPY is used ?
 
 The EXTCODECOPY is used to copy code from another contract into the memory of the current contract. This could be the case where a contract but not when a contract calls a function of another contract which would be done through CALL, DELEGATECALL, STATICCALL, or CALLCODE.
 A contract may use EXTCODECOPY in the case of some proxy contract situations where a proxy retrieved and executed the code of another contract but remained the same.
+
+---
 
 QUESTION 6
 . Complete the assembly exercises in this repo
@@ -134,6 +144,8 @@ Assembly_1.sol
         }
     }
 
+---
+
 Assembly_2.sol
 
     pragma solidity ^0.8.4;
@@ -155,6 +167,8 @@ Assembly_2.sol
         }
     }
 
+---
+
 Assembly_3.sol
 
     pragma solidity ^0.8.4;
@@ -169,6 +183,8 @@ Assembly_3.sol
             }
         }
     }
+
+---
 
 Assembly_4.sol
 

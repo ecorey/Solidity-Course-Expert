@@ -24,6 +24,8 @@ written in assembly
 
     }
 
+---
+
 QUESTION 2
 . Do you know what this code is doing ?
 
@@ -67,6 +69,8 @@ The runtime bytecode for this contract is
 
     0x68601e8060093d393df35952383d59396009380160173d828234
     f050f0ff
+
+---
 
 QUESTION 3
 Explain what the following code is doing in the Yul
