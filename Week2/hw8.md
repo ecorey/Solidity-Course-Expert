@@ -44,6 +44,8 @@ Done So Far to Optimize:
 
 - packing variables
 - removed checkIfWhiteListed modifier and combined logic into whiteTransfer function
+- removed onlyAdminOrOwner modifier, added logic into updatePayment and addToWhitelist functions
+-
 
 ---
 
