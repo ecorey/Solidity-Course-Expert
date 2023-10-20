@@ -141,6 +141,7 @@ Assembly_1.sol
 
                 // To return it needs to be stored in memory
                 // with command mstore(MEMORY_LOCATION, STACK_VARIABLE)
+                // mstore saves to slot 0x80 first
                 mstore(0x80, molValue)
 
                 // to return you need to specify address and the size from the starting point
@@ -229,6 +230,8 @@ Assembly_4.sol
 
             assembly {
 
+                // mstore starts with slot 0 vs mstore that uses 0x80, and 32 bytle // //
+                // intervals is represented by 0x20
                 let pCount := sload(0)
                 pCount := add(pCount, num)
                 sstore(0, pCount)
