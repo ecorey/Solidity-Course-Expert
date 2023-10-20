@@ -42,7 +42,7 @@ For the answer see the GasOptimized.sol contract in the HW8_Foundry Repository a
 
 Done So Far to Optimize:
 
-- packing variables
+- packing variables and checking for unallocated space with sol2uml storage
 - removed checkIfWhiteListed modifier and combined logic into whiteTransfer function
 - removed onlyAdminOrOwner modifier, added logic into updatePayment and addToWhitelist functions
 - ***
@@ -65,6 +65,6 @@ GasContract Storage:
 
 ---
 
-GasContractOptimized Storage:
+GasContractOptimized Storage: (One less storage slot using the GasContractOptimized contract)
 
 ![GasContractOptimized Storage](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/GasContractOptimized.svg)
