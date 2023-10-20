@@ -19,7 +19,7 @@ A precompiled contract is a method of optimizing development and gas consumption
 
 Ethereum clients are the software implementation of the Ethereum protocol allowing nodes to maintain a shared ledger, validate transactions, and execute smart contracts. Every client has its own implementation of the EVM and the various clients are written in different programming languages such as Go, Rust, Java, and C#. Changes in the Ethereum protocol reflected in the EIPs are updated and maintained in the clients.
 
-Ethereum clients are responsible for implementing all the areas of the Ethereum protocol and in relationship to precompiled contracts if there were to be variations between clients then it would create an issue with consensus in the network and in a worst case situation could possibly even create a situation where there are nodes running different clients that end up on different versions of the blockchain crating an unwanted fork.
+Ethereum clients are responsible for implementing all the areas of the Ethereum protocol and in relationship to precompiled contracts if there were to be variations between clients then it would create an issue with consensus in the network and in a worst case situation could possibly even create a situation where there are nodes running different clients that end up on different versions of the blockchain creating an unwanted fork.
 
 ---
 
@@ -49,20 +49,25 @@ Input for the function was: 11
 
     Memory:
         {
-        "0x0": "0000000000000000000000000000000000000000000000000000000000000000\t????????????????????????????????",
-        "0x20": "0000000000000000000000000000000000000000000000000000000000000000\t????????????????????????????????",
-        "0x40": "0000000000000000000000000000000000000000000000000000000000000080\t????????????????????????????????"
+            0x0:
+            0x0000000000000000000000000000000000000000000000000000000000000000	????????????????????????????????
+            0x20:
+            0x0000000000000000000000000000000000000000000000000000000000000000	????????????????????????????????
+            0x40:
+            0x0000000000000000000000000000000000000000000000000000000000000080 ????????????????????????????????
+            0x60:
+            0x0000000000000000000000000000000000000000000000000000000000000000	????????????????????????????????
+            0x80:
+            0x000000000000000000000000000000000000000000000000000000000000000b ???????????????????????????????
         }
 
-The 0x0, 0x20, and 0x40 are the memory addresses that are 32 bytes.
-The first 2 slots, 0x0 and 0x20 are 256-bit representations for 0 and an empty memory slot.
-The 0x40 does not represent the value 11 and the value is not being held in the memory, but rather it is found in the stack as seen below.
+The 0x0, 0x20, 0x40, 0x60, 0x80 are the memory addresses that are 32 bytes.
+The 0x000000000000000000000000000000000000000000000000000000000000000b is hexadecimal for 11. This value can be seen in the 0x80 location in memory.
 
     Stack:
         [
-        "0x000000000000000000000000000000000000000000000000000000000000000b",
-        "0x0000000000000000000000000000000000000000000000000000000000000043",
+        "0x0000000000000000000000000000000000000000000000000000000000000020",
+        "0x0000000000000000000000000000000000000000000000000000000000000080",
         "0x00000000000000000000000000000000000000000000000000000000c0953ae6"
         ]
 
-The 0x000000000000000000000000000000000000000000000000000000000000000b is hexadecimal for 11.
