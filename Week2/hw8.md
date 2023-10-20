@@ -37,3 +37,15 @@ EG:
 For the answer see the HW8_Foundry Repository found at:
 
 [HW8](https://github.com/ecorey/HW8_Foundry)
+
+Class Diagram:
+
+![Class Diagram](https://github.com/ecorey/HW8_Foundry)
+
+GasContract Storage:
+
+![GasContract Storage](https://github.com/ecorey/HW8_Foundry)
+
+GasContractOptimized Storage:
+
+![GasContractOptimized Storage](https://github.com/ecorey/HW8_Foundry)
