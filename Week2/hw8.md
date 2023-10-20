@@ -34,7 +34,7 @@ EG:
 
 ---
 
-For the answer see the HW8_Foundry Repository found at:
+For the answer see the GasOptimized.sol contract in the HW8_Foundry Repository and run the forge test command. There are two test files that are the exact same but one tests the original Gas.sol contract and the other the GasOptimized.sol contract so the gas report for each contract can be compared. The repository is found at:
 
 [HW8](https://github.com/ecorey/HW8_Foundry)
 
@@ -45,9 +45,7 @@ Done So Far to Optimize:
 - packing variables
 - removed checkIfWhiteListed modifier and combined logic into whiteTransfer function
 - removed onlyAdminOrOwner modifier, added logic into updatePayment and addToWhitelist functions
--
-
----
+- ***
 
 Gas Report:
 
