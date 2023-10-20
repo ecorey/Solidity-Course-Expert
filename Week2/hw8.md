@@ -41,8 +41,9 @@ For the answer see the HW8_Foundry Repository found at:
 ---
 
 Done So Far to Optimize:
--packing variables
--removed checkIfWhiteListed modifier and combined logic into whiteTransfer function
+
+- packing variables
+- removed checkIfWhiteListed modifier and combined logic into whiteTransfer function
 
 ---
 
