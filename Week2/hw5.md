@@ -230,8 +230,8 @@ Assembly_4.sol
 
             assembly {
 
-                // mstore starts with slot 0 vs mstore that uses 0x80, and 32 bytle // //
-                // intervals is represented by 0x20
+                // mstore starts with slot 0 vs mstore that uses 0x80, and 32 bytes
+                // intervals are represented by 0x20
                 let pCount := sload(0)
                 pCount := add(pCount, num)
                 sstore(0, pCount)
