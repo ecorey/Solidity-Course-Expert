@@ -77,8 +77,9 @@ Answer Simplified:
     contract homework2 {
         uint8[] public array = [1,2,3,4,5,6];
         function remove(uint index) public{
-        array[index] = array[array.length - 1];
-        array.pop();
+            // including require increases gas but prevents overflow/ underflow errors
+            require(array.length > 0, "Array is Empty");
+            array[index] = array[array.length - 1];
+            array.pop();
+        }
     }
-
-}
