@@ -36,7 +36,7 @@ EG:
 
 For the answer see the GasOptimized.sol contract in the HW8_Foundry Repository and run the forge test command. There are two test files that are the exact same but one tests the original Gas.sol contract and the other the GasOptimized.sol contract so the gas report for each contract can be compared. The repository is found at:
 
-[HW8](https://github.com/ecorey/HW8_Foundry)
+[HW8 Repository (Foundry)](https://github.com/ecorey/HW8_Foundry)
 
 ---
 
