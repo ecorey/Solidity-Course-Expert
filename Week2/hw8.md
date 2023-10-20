@@ -42,7 +42,7 @@ Class Diagram:
 
 <!-- ![Class Diagram](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg) -->
 
-<img src="https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg" alt="Alt text" width="1200" height="1200">
+<img src="https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg" alt="Class Diagram" width="1200" height="2400">
 
 GasContract Storage:
 
