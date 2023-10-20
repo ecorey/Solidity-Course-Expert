@@ -38,13 +38,25 @@ For the answer see the HW8_Foundry Repository found at:
 
 [HW8](https://github.com/ecorey/HW8_Foundry)
 
+---
+
+Gas Report:
+
+![Gas Report](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/report.JPG)
+
+---
+
 Class Diagram:
 
 ![Class Diagram](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg)
 
+---
+
 GasContract Storage:
 
 ![GasContract Storage](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/GasContract.svg)
+
+---
 
 GasContractOptimized Storage:
 
