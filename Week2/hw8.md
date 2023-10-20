@@ -53,13 +53,13 @@ Gas Report:
 
 ---
 
-Class Diagram:
+Class Diagram (UML of the original Gas.sol contract):
 
 ![Class Diagram](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg)
 
 ---
 
-GasContract Storage:
+GasContract Storage (Unchanged and yet to be optimized):
 
 ![GasContract Storage](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/GasContract.svg)
 
