@@ -59,12 +59,12 @@ Class Diagram (UML of the original Gas.sol contract):
 
 ---
 
-GasContract Storage (Unchanged and yet to be optimized):
+Gas.sol Storage (Unchanged and yet to be optimized):
 
 ![GasContract Storage](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/GasContract.svg)
 
 ---
 
-GasContractOptimized Storage: (One less storage slot using the GasContractOptimized contract where all slots are used at maximum 32 byte capacity except slot 0 on the contract but there is no way currently of packing the variables further)
+GasOptimized.sol Storage: (One less storage slot using the GasContractOptimized contract where all slots are used at maximum 32 byte capacity except slot 0 on the contract but there is no way currently of packing the variables further)
 
 ![GasContractOptimized Storage](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/GasContractOptimized.svg)
