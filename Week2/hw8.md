@@ -40,9 +40,7 @@ For the answer see the HW8_Foundry Repository found at:
 
 Class Diagram:
 
-<!-- ![Class Diagram](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg) -->
-
-<img src="https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg" alt="Class Diagram" width="1200" height="2400">
+![Class Diagram](https://github.com/ecorey/Solidity-Course-Expert/blob/main/Week2/classDiagram.svg)
 
 GasContract Storage:
 
