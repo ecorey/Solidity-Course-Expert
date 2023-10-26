@@ -1,9 +1,10 @@
-Homework 11
-Optimisation 2
+# Homework 11
+
+\*Optimisation 2
 
 ---
 
-QUESTION 1
+\*\*QUESTION 1
 Why are negative numbers more expensive to store than positive numbers ?
 
 In the Ethereum EVM, both negative and positive numbers are stored as a 256-bit word. The difference is that negative numbers are represented in two's complement form, which may account for the more expensive storage.
