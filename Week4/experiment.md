@@ -1,10 +1,10 @@
 # Homework 11
 
-\*Optimisation 2
+_Optimisation 2_
 
 ---
 
-\*\*QUESTION 1
+**QUESTION 1**
 Why are negative numbers more expensive to store than positive numbers ?
 
 In the Ethereum EVM, both negative and positive numbers are stored as a 256-bit word. The difference is that negative numbers are represented in two's complement form, which may account for the more expensive storage.
@@ -13,11 +13,7 @@ In the Ethereum EVM, both negative and positive numbers are stored as a 256-bit 
 
 QUESTION 2
 Test the following statements in Remix, which is cheaper and why ?
-Assume that the denominator can never be zero.
-
-    ``` result = numerator / demoninator; ```
-
-
+Assume that the denominator can never be zero. `result = numerator / demoninator;`
 
     assembly {
         result := div(numerator, demoninator)
