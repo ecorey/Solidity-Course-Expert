@@ -1,1 +1,1 @@
-Exercises and Homework for the Oct. - Nov. 2023 Encode.Club Solidity Expert Bootcamp organized in folders according to the week number.
+# Course Work and Material for the Solidity Expert Bootcamp Oct.23 - Nov. 23 by Encode.Club and Extropy.io
